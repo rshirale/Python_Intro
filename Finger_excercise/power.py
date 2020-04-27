@@ -1,17 +1,14 @@
 #!/usr/bin/env python3
 """
-Find the cube root of a perfect cube using Exhaustive Enumeration Technique
-Prints the integer cube rootm if it exists, of an integer
-"""
-x = int(input("Enter an integer: "))
-ans = 0
-while ans**3 < abs(x):
-    ans += 1
+Write a program that asks the user to enter an integer.
+Prints two integers, root and pwr,
+such that 1<pwr<6
+and root**pwr
 
-print(f"\nWhile loop iterations ans:{ans}")
-if ans**3 != abs(x):
-    print(f"\n{x}, is not a perfect cube")
-else:
-    if x < 0:
-        ans = -ans
-    print(f"\nCube root of {x} is {ans}")
+"""
+while True:
+    pwr = int(input("Enter an integer: "))
+    if pwr >= 1 and pwr <= 6:
+        break
+print(f"Power is {pwr}")
+print(f"root is root**{pwr}")
