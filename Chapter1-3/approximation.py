@@ -9,12 +9,12 @@ x = int(input("Enter an integer: "))
 epsilon = 0.01
 
 step = epsilon**2
-#print(f"Value of step before loop = {step}")
+print(f"Value of step before loop = {step}")
 numGuesses = 0
-#print(f"Value of numguesses before loop = {numGuesses}")
+print(f"Value of numguesses before loop = {numGuesses}")
 
 ans = 0.0
-#print(f"Value of ans before loop = {ans}")
+print(f"Value of ans before loop = {ans}")
 
 #block 1
 while abs(ans**2 - x) >= epsilon and ans <= x:
